@@ -689,6 +689,158 @@ Cloud services, pipelines or outputs are **not presented as executed unless they
 
 ## 📄 License
 
+---
+
+# 📸 Execution Results
+
+The following screenshots provide execution evidence from the implemented **Enterprise Sales Lakehouse** workflow in Databricks.
+
+They demonstrate source generation, Bronze ingestion, Silver transformations, Gold analytics, incremental processing, data quality validation, monitoring, performance analysis, and final end-to-end validation.
+
+> **Implementation note:** The processing workflow was executed using Databricks. Azure Data Factory and ADLS Gen2 are represented as the target Azure production architecture and are not presented as executed cloud components.
+
+---
+
+## 1️⃣ Source Data Generation
+
+Representative enterprise sales datasets were generated and validated before entering the Medallion Architecture.
+
+![Customer Source Data](screenshots/01_customer_source_data.png)
+
+![Source Data Quality Validation](screenshots/02_source_data_quality_validation.png)
+
+---
+
+## 2️⃣ Bronze Layer — Raw Ingestion
+
+The Bronze layer preserves source records and adds ingestion metadata for traceability.
+
+![Bronze Orders with Metadata](screenshots/04_bronze_orders_with_metadata.png)
+
+![Bronze Reconciliation](screenshots/05_bronze_reconciliation.png)
+
+![Bronze Ingestion Summary](screenshots/06_bronze_ingestion_summary.png)
+
+---
+
+## 3️⃣ Silver Layer — Transformation & Trusted Data
+
+Bronze data is cleaned, standardized, validated, and transformed into trusted Silver datasets.
+
+![Silver Orders Transformed](screenshots/07_silver_orders_transformed.png)
+
+![Silver Trusted Sales](screenshots/08_silver_trusted_sales.png)
+
+![Silver Data Quality](screenshots/09_silver_data_quality.png)
+
+![Silver Transformation Summary](screenshots/10_silver_transformation_summary.png)
+
+---
+
+## 4️⃣ Gold Layer — Business Analytics
+
+The Gold layer provides analytics-ready sales facts, KPIs, and regional business insights.
+
+![Gold Fact Sales](screenshots/11_gold_fact_sales.png)
+
+![Gold Business KPIs](screenshots/12_gold_business_kpis.png)
+
+![Gold Regional Performance](screenshots/13_gold_regional_performance.png)
+
+![Gold Analytics Summary](screenshots/14_gold_analytics_summary.png)
+
+---
+
+## 5️⃣ Incremental Processing — Delta MERGE
+
+Incremental processing demonstrates insert/update handling and idempotent Delta Lake MERGE behavior.
+
+![Incremental Sales Batch](screenshots/15_incremental_sales_batch.png)
+
+![Incremental MERGE Validation](screenshots/16_incremental_merge_validation.png)
+
+![Incremental Processing Summary](screenshots/17_incremental_processing_summary.png)
+
+---
+
+## 6️⃣ Enterprise Data Quality & Reconciliation
+
+Cross-layer validation verifies data quality, reconciliation, and referential integrity.
+
+![Enterprise Data Quality Checks](screenshots/18_enterprise_data_quality_checks.png)
+
+![Layer Reconciliation](screenshots/19_layer_reconciliation.png)
+
+![Data Quality Validation Summary](screenshots/20_data_quality_validation_summary.png)
+
+---
+
+## 7️⃣ Audit & Monitoring
+
+Operational metrics and health checks provide visibility into pipeline execution and data health.
+
+![Layer Audit Metrics](screenshots/21_layer_audit_metrics.png)
+
+![Pipeline Health Monitoring](screenshots/22_pipeline_health_monitoring.png)
+
+![Audit Monitoring Summary](screenshots/23_audit_monitoring_summary.png)
+
+---
+
+## 8️⃣ Performance & Business Analytics
+
+Spark-based analytical processing demonstrates optimized aggregation, execution planning, and business analytics.
+
+![Optimized Daily Sales](screenshots/24_optimized_daily_sales.png)
+
+![Spark Execution Plan](screenshots/25_spark_execution_plan.png)
+
+![Performance Analytics Summary](screenshots/26_performance_analytics_summary.png)
+
+---
+
+## 9️⃣ End-to-End Project Validation
+
+The final validation verifies required Lakehouse tables, processing stages, data integrity, monitoring health, and overall project completion.
+
+![Required Tables Validation](screenshots/27_required_tables_validation.png)
+
+![Final Validation Matrix](screenshots/28_final_validation_matrix.png)
+
+![Project Validation](screenshots/29_project_validation_100_percent.png)
+
+---
+
+## ✅ Implementation Summary
+
+| Capability | Status |
+|---|---|
+| Source Data Generation | ✅ Implemented |
+| Bronze Layer | ✅ Implemented |
+| Silver Layer | ✅ Implemented |
+| Gold Layer | ✅ Implemented |
+| Delta Lake Storage | ✅ Implemented |
+| Incremental Delta MERGE | ✅ Implemented |
+| Data Quality Validation | ✅ Implemented |
+| Layer Reconciliation | ✅ Implemented |
+| Referential Integrity Validation | ✅ Implemented |
+| Audit & Monitoring | ✅ Implemented |
+| Spark Performance Analysis | ✅ Implemented |
+| Business Analytics | ✅ Implemented |
+| End-to-End Validation | ✅ Implemented |
+| Azure Data Factory | 📐 Target Architecture / Design |
+| Azure Data Lake Storage Gen2 | 📐 Target Architecture / Design |
+
+---
+
+## 🏆 Final Result
+
+The implemented Databricks Lakehouse workflow successfully demonstrates:
+
+**Source → Bronze → Silver → Gold → Incremental Processing → Data Quality → Reconciliation → Monitoring → Performance Analytics → Final Validation**
+
+The repository contains the executable notebook source, SQL analytics, architecture documentation, pipeline documentation, and execution evidence required to review the project implementation.
+
 This project is intended for educational and portfolio demonstration purposes.
 
 ---
