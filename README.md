@@ -7,6 +7,7 @@
 ![ADF](https://img.shields.io/badge/Azure_Data_Factory-Orchestration-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-Analytics-336791?style=flat-square)
 ![Power BI](https://img.shields.io/badge/Power_BI-Reporting-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+[![Python CI](https://github.com/Gunasekaranravieng/Enterprise-sales-lakehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/Gunasekaranravieng/Enterprise-sales-lakehouse/actions/workflows/ci.yml)
 
 > Production-style Enterprise Sales Lakehouse portfolio project designed using Azure Data Factory, Azure Data Lake Storage Gen2, Azure Databricks, PySpark, Delta Lake, SQL and Power BI.
 
